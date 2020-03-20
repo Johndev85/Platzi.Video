@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    font-size: 16px;
+
+}
+
+.header {
+    outline: 1px solid goldenrod;
+    height: 6rem;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    height: inherit;
+}
+
+.content {
+    outline: 1px solid salmon;
+    flex: 1;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside {
+    outline: 1px solid silver;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    list-style: none;
+    flex: 1;
+    background-color:yellowgreen ;
+    outline: 1px solid cyan;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5s;
+}
+.menu-item:hover {
+    flex: 8; 
+    background-color: rgb(10, 145, 150);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    outline: 1px solid yellow;
+    height: 6rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+</style>
+
+<body>
+    <header class="header"> 
+        <ul class="menu">
+                <li class="menu-item"> Home </li>
+                <li class="menu-item"> About</li>
+                <li class="menu-item"> Contact </li>
+        </ul> 
+    </header>
+
+    <section class="container"> 
+       <section class="content">
+           Aquí va el contenido
+       </section>
+       <aside class="aside"> Soy un Aside </aside>
+    </section>
+
+    <footer class="footer">
+        Este es el Footer
+    </footer>
+
+</body>
+</html>

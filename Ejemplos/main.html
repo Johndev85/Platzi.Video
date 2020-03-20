@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+    <title>Platzi Video</title>
+</head>
+<style>
+    body {
+        font-family: 'Muli', sans-serif;
+        margin: 0px;
+        background: linear-gradient(#4CA1AF,#2C3E50 );
+    }
+    header {
+        background-color: #4CA1AF;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .header__img {
+        width: 190px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    .header__menu {
+        margin-right: 40px;
+    }
+
+    .header__menu ul {
+        display: none;
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0px 0px 0px -14px;
+    }
+
+    .header__menu:hover ul, ul:hover {
+        display: block;
+
+    }
+
+    .header__menu li {
+        margin: 10px 0px;
+    }
+
+    .header__menu li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .header__menu li a:hover {
+        text-decoration:underline;
+        color: blue;
+    }
+
+    .header__menu--profile {
+        margin: 5px;
+        margin-right: 5px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .header__menu--profile p {
+        color: white;
+    }
+
+    .main {
+        height: 300px;
+        align-items: center;
+    } 
+
+    .main__title {
+        color: white;
+        font-size: 30px;
+        margin-left: 35%;
+    }
+
+    .input {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 75%;
+        height: 42px;
+        font-family: 'Muli', sans-serif;
+        border-radius: 25px;
+        border: 2px solid white;
+        font-size: 16px;
+        color: white;
+        padding: 0px 20px;
+        align-content: center;
+        position: relative;
+        margin-left: 10%;
+
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="file://D:\PLATZI\Frontend Developer\recursos\logo-platzi-video-BW2.png" alt="Platzi video">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="file://D:\PLATZI\Frontend Developer\recursos\user.png" alt="user">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li> <a href="/">Cuenta</a> </li>
+                <li><a href="/">Cerrar Sesión</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <h2 class="main__title"> ¿Qué quieres ver hoy? </h2>
+        <input  class="input"  type="text" placeholder="Buscar..">
+    </section>
+
+
+</body>
+</html>
