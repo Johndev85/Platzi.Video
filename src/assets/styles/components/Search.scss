@@ -1,0 +1,44 @@
+.main {
+    height: 200px;
+    align-items: center;
+  }
+  
+  .main__title {
+    color: white;
+    font-size: 30px;
+    margin-left: 35%;
+  }
+  
+  .main__title--input {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+    height: 42px;
+    font-family: "Muli", sans-serif;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-size: 16px;
+    color: white;
+    padding: 0px 20px;
+    align-content: center;
+    position: relative;
+    margin-left: 10%;
+  }
+    
+  .input {
+    background-color: transparent;
+    color: white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: "Muli", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    height: 50px;
+  }
+  
+  ::placeholder {
+    color: white;
+  }

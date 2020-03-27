@@ -1,0 +1,21 @@
+.footer {
+    background-color: #2C3E5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: white;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: "Muli", sans-serif;
+    cursor: pointer;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

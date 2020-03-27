@@ -1,6 +1,14 @@
+@charset "UTF-8";
+@import './Vars.scss';
+@import './Media.scss';
+
 body {
     margin: 0;
-    background-color: rgb(128, 129, 238);
-    font-family: fantasy;
+    font-family: $theme-font;
+    background: $main-color;
     color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
 }

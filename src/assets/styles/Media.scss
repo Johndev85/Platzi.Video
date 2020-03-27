@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+
+    .main {
+        height: 180px;
+        align-items: center;
+    } 
+    
+    .main__title {
+        color: $blanco;
+        font-size: 30px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 35px;
+    }
+    
+    .footer {
+        background-color: rgb(44, 62, 80);
+        font-family: 'Muli', sans-serif;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        justify-content: space-around;
+        font-size: 14px;
+    } /*  Media queries para distintas pantallas   */
+}
