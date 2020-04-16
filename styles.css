@@ -292,6 +292,7 @@ header {
   font-size: 16px;
   text-align: center;
 }
+
 .login__container--register a {
   /*   ejemplo de anidamiento en sass  */
   color: white;

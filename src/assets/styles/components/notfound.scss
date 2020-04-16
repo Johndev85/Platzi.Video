@@ -1,0 +1,42 @@
+.notfound {
+    font-family: "Muli", sans-serif;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .text {
+    font-size: 90px;
+    font-weight: bold;
+  }
+  
+  .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  
+  .notfound__text--p {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
+  

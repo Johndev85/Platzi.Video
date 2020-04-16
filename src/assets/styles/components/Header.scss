@@ -55,14 +55,18 @@ header {
   }
   
   .header__menu--profile {
-    margin: 5px;
-    margin-right: 5px;
-    width: 90px;
-    display: flex;
     align-items: center;
+    display: flex;
     cursor: pointer;
   }
   
+  .header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+ 
   .header__menu--profile p {
     color: white;
   }

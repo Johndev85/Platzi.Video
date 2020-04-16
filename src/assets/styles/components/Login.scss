@@ -1,0 +1,143 @@
+.login {
+    background: linear-gradient(#4CA1AF,#2C3E50 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    box-shadow: rgba(54, 49, 73, 0.342) 1px 10px 20px;
+    color: white;
+    padding: 60px, 68px, 40px;
+    min-height: 600px;
+    width: 350px;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;   
+}
+
+.login__container--form label {
+    font-size: 14px;
+}
+
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.login__container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+.login__container--remember-me a:hover {
+   text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.login__container--social-media > div > img {
+   width: 30px;
+   margin-right: 10px;
+}
+
+#cbox1 {
+    cursor: pointer;
+}
+
+.login__container--register {
+    font-size: 16px;
+    text-align: center;
+}
+
+.login__container--register a {
+    /*   ejemplo de anidamiento en sass  */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+.login__container--register a:hover {
+    text-decoration: underline;
+ }
+
+ .input {
+    background-color: transparent;
+    color: white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: "Muli", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    height: 50px;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  .button {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Muli", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+  }
+  
+  .button:hover {
+    background-color: rgba(39, 41, 126, 0.3);
+  }
+  
+  .login__container--inicio-sesion a {
+    font-family: "Muli", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login__container--inicio-sesion a:hover {
+    text-decoration: underline;
+  }
