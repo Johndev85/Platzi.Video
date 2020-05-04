@@ -61,12 +61,12 @@ const Login = (props) => {
 
         <section className='login__container--social-media'>
           <div>
-            {/* <img src='file://D:\PLATZI\Frontend Developer\Platzi-Video\src\assets\resources\google-icon.webp' alt='Google' />*/}
-            <img src='file://D:\PLATZI\Frontend Developer\Platzi-Video\src\assets\resources\google-icon.webp' alt='Google' />
+            { /* <img src='file://D:\PLATZI\Frontend Developer\Platzi-Video\src\assets\resources\google-icon.webp' alt='Google' />*/}
+            <img src='./src/assets/resources/google-icon.webp' alt='Google' />
             Inicia sesión con Google
           </div>
           <div>
-            <img src='file://D:\PLATZI\Frontend Developer\Platzi-Video\src\assets\resources\twitter-icon.webp' alt='Twitter' />
+            <img src='./src/assets/resources/twitter-icon.webp' alt='Twitter' />
             Inicia sesión con Twitter
           </div>
         </section>
