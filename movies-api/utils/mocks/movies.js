@@ -153,6 +153,22 @@ const moviesMock = [
     }
   ];
 
+function filterMoviesMock(tag) {
+  return moviesMock.filter(movie => movie.tags.includes(tag))
+}
+
+  class MoviesServiceMock {
+    async getMovies() { // eslint-disable-line
+      return Promise.resolve(moviesMock)
+    }
+    async createMovie() { // eslint-disable-line
+      return Promise.resolve(moviesMock[0])
+    }
+  }
+
+
   module.exports = {
-    moviesMock
+    moviesMock,
+    filterMoviesMock,
+    MoviesServiceMock
   };
