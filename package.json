@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "start:dev": "node src/server/index"
+    "start:dev": "nodemon src/server/index"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +21,12 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
