@@ -5,7 +5,7 @@ import NotFound from '../containers/NotFound';
 import Player from '../containers/Player';
 
 
-const router = [
+const routes = [
     {
         exact: true,
         path: '/',
