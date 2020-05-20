@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { setFavorite, deleteFavorite } from '../actions';
 import '../assets/styles/components/CarouselItem.scss';
 import removeIcon from '../assets/resources/remove-icon.png';
+import playIcon from '../assets/resources/icons-play.png';
+import plusIcon from '../assets/resources/plus-icon.png';
 
 const CarouselItem = (props) => {
   const { id, cover, title, year, contentRating, duration, isList } = props;
@@ -26,14 +28,14 @@ const CarouselItem = (props) => {
           <Link to={`/player/${id}`}>
             <img
               className='carrousel-item__details--img'
-              src='src/assets/resources/play-icon.webp'
+              src={ playIcon }
               alt='Play'
             />
           </Link>
           {isList ?
             <img className='carrousel-item__details--img' src={ removeIcon } onClick={() => handleDeleteFavorite(id)} />
             :
-            <img  className='carrousel-item__details--img' src='src/assets/resources/plus-icon.webp' onClick={handleSetFavorite} />
+            <img  className='carrousel-item__details--img' src={ plusIcon } onClick={handleSetFavorite} />
           }
         </div>
       </div>
