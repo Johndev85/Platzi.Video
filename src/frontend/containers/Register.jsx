@@ -51,7 +51,7 @@ const Register = (props) => {
             placeholder='Contraseña'
             onChange={handleInput}
           />
-          <button className='button'> Registrarme </button>
+          <button type='button' className='button'> Registrarme </button>
           <div className='login__container--inicio-sesion'>
             <Link to='/Login'>
               Iniciar sesión
