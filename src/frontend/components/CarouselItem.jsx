@@ -33,8 +33,8 @@ const CarouselItem = (props) => {
             />
           </Link>
           {isList ?
-            <img className='carrousel-item__details--img' src={removeIcon} onClick={() => handleDeleteFavorite(id)} /> :
-            <img className='carrousel-item__details--img' src={plusIcon} onClick={handleSetFavorite} />}
+            <img className='carrousel-item__details--img' src={removeIcon} onClick={() => handleDeleteFavorite(id)} alt='remove-icon' /> :
+            <img className='carrousel-item__details--img' src={plusIcon} onClick={handleSetFavorite} alt='remove-icon' />}
         </div>
       </div>
       <p className='carrousel-item__details--title'>
