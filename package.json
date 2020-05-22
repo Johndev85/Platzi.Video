@@ -30,7 +30,8 @@
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-hot-middleware": "^2.25.0"
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-manifest-plugin": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
