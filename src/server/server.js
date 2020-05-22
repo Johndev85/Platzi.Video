@@ -42,6 +42,7 @@ if (ENV === 'development') {
 const setResponse = (html, preloadedState, manifest) => {
     const mainStyles = manifest ? manifest['main.css'] : 'assets/app.css'
     const mainBuild = manifest ? manifest['main.js'] : 'assets/app.js'
+    const vendorBuild = manifest ? manifest['vendors.js'] : 'assets/app.js'
 
     return (
         `<!DOCTYPE html>
@@ -61,6 +62,7 @@ const setResponse = (html, preloadedState, manifest) => {
               )}
               </script>
             <script src="${mainBuild}" type="text/javascript"></script>
+            <script src="${vendorBuild}" type="text/javascript"></script>
         </body>
     </html>`
     )

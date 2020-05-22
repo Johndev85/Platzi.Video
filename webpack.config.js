@@ -29,18 +29,23 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin()],
     splitChunks: {
-      chunks: async,
+      chunks: 'async',
       name: true,
-      cacheGruups: {
+      cacheGroups: {
         vendors: {
           name: 'vendors',
           chunks: 'all',
-          reuseExistingchunk: true,
+          reuseExistingChunk: true,
           priority: 1,
           filename: isDev ? 'assets/vendor.js' : 'assets/vendor-[hash].js',
           enforce: true,
+          test(module, chunks) {
+            const name = module.nameForCondition && module.nameForCondition()
+            return chunks.some(chunk => chunk.name !== 'vendors' && /[\\/]node_modules[\\/]/.test(name))
+          }
+        }
       }
-    },
+    }
   },
   module: {
     rules: [
@@ -80,16 +85,15 @@ module.exports = {
     plugins: [
       isDev ? new webpack.HotModuleReplacementPlugin() :
         () => { },
-        isDev ? () => {} :
-          new CompressionWebpackPlugin({
-            test: /\.js$|\.css/,
-            filename: '[path].gz'
+        isDev ? () => { } :
+          new CompressionWebpackPlugin( {
+              test: /\.js$|\.css$/,
+              filename: '[path].gz'
           }),
-        isDev ? () => {} :
-        new ManifestPlugin(),
-      new MiniCssExtractPlugin({
-        filename: isDev ? 'assets/app.css' : 'assets/app-[hash].css',
-      }),
-    ],
-  }
+          isDev ? () => { } :
+          new ManifestPlugin(),
+        new MiniCssExtractPlugin( {
+          filename: isDev ? 'assets/app.css' : 'assets/app-[hash].css',
+        }),
+      ],
 }
