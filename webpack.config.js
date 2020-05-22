@@ -28,6 +28,19 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],
+    splitChunks: {
+      chunks: async,
+      name: true,
+      cacheGruups: {
+        vendors: {
+          name: 'vendors',
+          chunks: 'all',
+          reuseExistingchunk: true,
+          priority: 1,
+          filename: isDev ? 'assets/vendor.js' : 'assets/vendor-[hash].js',
+          enforce: true,
+      }
+    },
   },
   module: {
     rules: [
@@ -64,18 +77,19 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
-  plugins: [
-    isDev ? new webpack.HotModuleReplacementPlugin() :
-      () => { },
-      isDev ? () => {} :
-        new CompressionWebpackPlugin({
-          test: /\.js$|\.css/,
-          filename: '[path].gz'
-        }),
-      isDev ? () => {} :
-      new ManifestPlugin(),
-    new MiniCssExtractPlugin({
-      filename: isDev ? 'assets/app.css' : 'assets/app-[hash].css',
-    }),
-  ],
-};
+    plugins: [
+      isDev ? new webpack.HotModuleReplacementPlugin() :
+        () => { },
+        isDev ? () => {} :
+          new CompressionWebpackPlugin({
+            test: /\.js$|\.css/,
+            filename: '[path].gz'
+          }),
+        isDev ? () => {} :
+        new ManifestPlugin(),
+      new MiniCssExtractPlugin({
+        filename: isDev ? 'assets/app.css' : 'assets/app-[hash].css',
+      }),
+    ],
+  }
+}
