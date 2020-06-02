@@ -1,0 +1,157 @@
+[33mcommit 853bf50e2f42b7d8ed4932808a875b7b8da7bcb9[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/server-side-render[m[33m)[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Tue Jun 2 09:50:08 2020 -0500
+
+    update changes
+
+[33mcommit ad31d431592750b5521c7aa5a34fc260e44bf719[m[33m ([m[1;31morigin/feature/server-side-render[m[33m)[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Fri May 22 14:47:15 2020 -0500
+
+    fixed webpack linter
+
+[33mcommit ea7878cf246d0be3d29716fe8bd30a3917097a1c[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Fri May 22 00:46:48 2020 -0500
+
+    se implementa eslint en webpack, reprodución video OK, no funcional gravatar
+
+[33mcommit c198850dfc02e1bb7fb5c9e9296a119be217096b[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 23:07:55 2020 -0500
+
+    Se implementa eslint con webpack
+
+[33mcommit 668a095db2f3189fcb1930cc6a3b3f0e5d7e7e83[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 22:41:05 2020 -0500
+
+    se implementa clean-webpack-plugin, funcionalidad ok
+
+[33mcommit 0fa3644269209eea43655a4cf7dd047c4aff2296[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 22:35:59 2020 -0500
+
+    Se termina de implementar vendorfile, funcionalidad OK
+
+[33mcommit 2138bc931dd9ce2ff00a76f0008b1a231032c153[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 19:59:04 2020 -0500
+
+    aplicando vendorfiles y cache groups
+
+[33mcommit c6c157ed5df5cdc75b26f32d30050d09ac23625a[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 19:46:10 2020 -0500
+
+    Se agrega hash y manifest
+
+[33mcommit 465af1c6eac8ae66779e0f14814802fbd9df5478[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 18:34:48 2020 -0500
+
+    se implementa optimizacion del build desde webpack y terser
+
+[33mcommit c783b87451afa06c6f2c48c82ff22bdd179a95f3[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu May 21 10:47:23 2020 -0500
+
+    se configura webpack para producción
+
+[33mcommit 867e5c6a2cc62c11deb5243de5c83a3f2801de4d[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Wed May 20 13:20:44 2020 -0500
+
+    se implementa helmet, libreria que agrega una capa de seguridad
+
+[33mcommit ea1b096c213201ebb17c9a5cfe295ae9806d48a2[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Wed May 20 12:37:09 2020 -0500
+
+    se implementa hydrate y preloaderState
+
+[33mcommit 9528a684d8af1ddc29ea7af39c7957220f53f9ad[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Tue May 19 21:35:45 2020 -0500
+
+    se agrega asset-require-hook, fixed icons del carrusel
+
+[33mcommit fe0534647f4cb49aa23ca3c3b4740445d8417626[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Tue May 19 20:29:35 2020 -0500
+
+    Se intrega SSR inicial, funcionando Ok
+
+[33mcommit 68a534871b3e05836011b2fefd952b5a1fbccd69[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Tue May 19 10:56:15 2020 -0500
+
+    configurando react-router, history, initialState
+
+[33mcommit 186369f27a339378a4e2f27701d8cf80aabd2f20[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Mon May 18 18:01:01 2020 -0500
+
+    Se integra servir react con express
+
+[33mcommit 1ff04bdf6a81058b6db6e3b0437935843c1ed2f2[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Mon May 18 17:24:19 2020 -0500
+
+    integración webpack con express, compiled sucessfully
+
+[33mcommit ae26dec609c33b2e2abe80019f1447a58a875f49[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Mon May 18 16:15:40 2020 -0500
+
+    se implementa estructura ssr, se monta express
+
+[33mcommit 5fe7be4b8f71e94e0460b8da7a593ecccd196ba5[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Mon May 18 14:26:02 2020 -0500
+
+    update root files, react redux ok, app funcional
+
+[33mcommit 1ca91672e0cf99f8fc8b25d01766c7c7e0aed84e[m
+Merge: e367b0d bee30cf
+Author: John Botero <jhondark@gmail.com>
+Date:   Mon May 4 17:28:43 2020 -0500
+
+    Merge branch 'origin/router-redux' funcionl en linux
+
+[33mcommit bee30cf3492a65751281a98e355186450ae67d28[m[33m ([m[1;32morigin/router-redux[m[33m)[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Mon May 4 12:55:58 2020 -0500
+
+    migración a linux, funcionando ok, funcionando gravatar
+
+[33mcommit e367b0d81a2a333d1fef45eefe8948bd593399b7[m[33m ([m[1;33mtag: v1.0[m[33m)[m
+Merge: c21e222 5ab7bca
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu Apr 16 14:18:55 2020 -0500
+
+    Merge branch 'master' of github.com:Johndev85/Platzi.Video
+
+[33mcommit c21e222a8a107c15f889f7f2a83d4e2264d31e4e[m
+Author: John Botero <jhondark@gmail.com>
+Date:   Thu Apr 16 13:47:11 2020 -0500
+
+    Se agregan últimos cambio del curso React router, no es funcional del todo.
+
+[33mcommit 5ab7bcad2e18eaf946cd43676dd53722c90c4fdf[m
+Author: John B <53975214+Johndev85@users.noreply.github.com>
+Date:   Thu Apr 16 13:42:33 2020 -0500
+
+    Initial commit
+
+[33mcommit ff8df5137077a685f5ed0906417fa16e1516e20e[m
+Author: John Botero <john@JOHNB-LAPTOP.localdomain>
+Date:   Thu Mar 26 22:35:01 2020 -0500
+
+    ESLint
+
+[33mcommit 603b405e1c166bf207b08a4def8f3cd4ad213f7f[m
+Author: John Botero <john@JOHNB-LAPTOP.localdomain>
+Date:   Thu Mar 19 22:37:24 2020 -0500
+
+    ESLint
